@@ -5,6 +5,7 @@ addEventListener("fetch", (event) => {
 
 const dockerHub = "https://registry-1.docker.io";
 const dockerHubFeng = "https://hub.bignof.com:3006";
+const CUSTOM_DOMAIN = 'bigno.cc'
 
 const routes = {
   // production
