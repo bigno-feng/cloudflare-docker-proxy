@@ -4,6 +4,7 @@ addEventListener("fetch", (event) => {
 });
 
 const dockerHub = "https://registry-1.docker.io";
+const dockerHubFeng = "https://hub.bignof.com:3006";
 
 const routes = {
   // production
@@ -18,6 +19,7 @@ const routes = {
 
   // staging
   ["docker-staging." + CUSTOM_DOMAIN]: dockerHub,
+  ["hub." + CUSTOM_DOMAIN]: dockerHubFeng,
 };
 
 function routeByHosts(host) {
